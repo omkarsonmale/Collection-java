@@ -1,0 +1,25 @@
+/*
+
+		mp.forEach((Key,Value)->System.out.println("Key"+Key+"Values"+Values));
+*/
+import java.util.Map;
+import java.util.HashMap;
+import Java.util.List;
+import java.util.ArrayList;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Map<Integer,List> mp= new Integer<>();
+		int [] arr ={1,4,2,5,7,2,1,5,6,3,5,1,4,6,2};
+		
+		for(int i=0;i<arr.length;i++){
+		    int n=arr[i];
+		    if(!mp.containsKey(n)){
+		        mp.put(n, new ArrayList<>());
+		    }
+		    mp.get(n).add(i);
+		}
+		mp.forEach((Key,Value)->System.out.println("Key"+Key+"Values"+Values));
+	}
+}
