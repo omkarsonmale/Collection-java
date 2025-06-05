@@ -23,3 +23,13 @@ public class Main
 		mp.forEach((Key,Value)->System.out.println("Key"+Key+"Values"+Values));
 	}
 }
+
+/*
+Key  1 Values  [0, 6, 11]
+Key  2 Values  [2, 5, 14]
+Key  3 Values  [9]
+Key  4 Values  [1, 12]
+Key  5 Values  [3, 7, 10]
+Key  6 Values  [8, 13]
+Key  7 Values  [4]
+*/
